@@ -1,0 +1,25 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+    var dataArray=[];
+    var dataArray = [23, 100, 5, 39, 99, 11];
+    var pjg_array = dataArray.length;
+    var dummy;
+    
+    alert("Data Array awal : " + dataArray.toString());
+    for (var i = 0; i < pjg_array - 1; i++) {
+        for (var j = i + 1; j < pjg_array; j++) {
+            if (dataArray[i] > dataArray[j]) {
+                var dummy = dataArray[i];
+                dataArray[i] = dataArray[j];
+                dataArray[j] = dummy;
+            }
+        }
+    }
+
+    alert("Data Array setelah disortir : " + dataArray.toString());
+</script>
+</body>
+</html>
